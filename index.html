@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Panel</title>
+    <script src="https://kit.fontawesome.com/c2c17f95a2.js" crossorigin="anonymous"></script>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .hover:hover{
+            background-color: rgb(76, 113, 222);
+            opacity: 80%;
+            color: white;
+        }
+        @media screen and (max-width: 1300px) {
+            .h6{
+                font-size: 13px;
+            }
+            .h3{
+                font-size: large;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Pulpit</div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+            <hr class="sidebar-divider my-0">
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <i class="fa-solid fa-lightbulb float-left fa-2xl ml-4 mt-4 text-white"></i>
+                <a class="nav-link">
+                    <p class="h4 float-left ml-3">Kontrole</p>
+                </a>
+                <div class="bg-white p-2 rounded m-3 mt-4">
+                    <div class="d-flex flex-column">
+                        <div class="p-2">Wykonane:</div>
+                        <div class="p-2">Nie pobrane przez inspektorów:</div>
+                        <div class="p-2">Oczekujące na akceptacje:</div>
+                        <div class="p-2">Pozostało do wykonania:</div>
+                    </div>
+                </div>
+            </li>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <i class="fa-solid fa-list-check float-left fa-2xl ml-4 mt-4 text-white"></i>
+                <a class="nav-link">
+                    <p class="h4 float-left ml-3">Wymagania</p>
+                </a>
+                <div class="bg-white p-2 rounded m-3 mt-4">
+                    <div class="d-flex flex-column">
+                        <div class="p-2">Wymagania:</div>
+                        <div class="p-2">Kontrole dodatkowe:</div>
+                        <div class="p-2">Kontrole niezapowiedziane:</div>
+                        <div class="p-2">Kontrole z próbkowaniem:</div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <div id="content">
+
+                <div class="container-fluid p-5">
+                    <div class="card border-left-primary shadow  py-2 w-25 float-right">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="row mb-2"><i class="fa-solid fa-book-open fa-2xl pt-3 text-primary"></i>
+                                        <div class="h3 font-weight-bold text-gray-800 pl-3">Rejestry</div>
+
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-clipboard-check fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr zgłoszeń</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-calendar-days fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr wniosków</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-check fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr próbek</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-magnifying-glass fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr certyfikatów</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-clipboard-check fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr odstępstw</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-calendar-days fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rozszerzenia odwołania</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-check fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Rejestr sankcji</div>
+                                    </div>
+                                </div>
+                                <div class="hover rounded">
+                                    <div class="row flex-nowrap"><i class="fa-solid fa-magnifying-glass fa-lg pl-3 pt-3"></i>
+                                        <div class="h6 pl-3 pt-2">Konflikty interesów</div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card-deck w-75">
+                        <div class="card border-left-primary shadow py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2"><i class="fa-solid fa-microchip fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">Proces</div>
+                                        </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-clipboard-check fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Zarządzanie kontrolami</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-calendar-days fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Planowanie kontroli</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-check fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Decyzje</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-magnifying-glass fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Szczegóły kontroli</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-left-primary shadow  py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2"><i class="fa-solid fa-book fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">Nadzór</div>
+                                        </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-note-sticky fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Braki wniosków</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-file fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Dokumentacja</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-file-lines fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Kontrole</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-file-invoice-dollar fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Finanse</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-left-primary shadow py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2"><i class="fa-solid fa-user fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">CRM</div>
+                                        </div>
+                                        <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-user-check fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Ewidencja klientów</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-envelope fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Dziennik korespondencji</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-id-card fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Ewidencja inspektorów</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-id-badge fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-4 pt-2">Rejestr ewaluacji</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card-deck w-75">
+                        <div class="card border-left-primary shadow py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2 flex-nowrap"><i class="fa-solid fa-address-card fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">Sprawozdania</div>
+                                        </div>
+                                        <div class="hover rounded">
+                                        <div class="row"><i class="fa-solid fa-file fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Transfer do GIJHARS</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-file-arrow-down fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Sprawozdanie GIJHARS</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-check fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Wykaz ARiMR</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-magnifying-glass fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Wyszukiwanie wg produkcji</div>
+                                        </div>
+                                    </div><div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-location-crosshairs fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Wyszukiwanie wg działek</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-magnifying-glass fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Monitorowanie działek</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-left-primary shadow py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2"><i class="fa-solid fa-print fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">Wydruki</div>
+                                        </div>
+                                        <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-paste fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Szablony dokumentów</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-file-excel fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Zestawienie tabelaryczne</div>
+                                        </div>
+                                    </div><div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-chart-line fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Analizy statystyczne</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-print fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Wydruk etykiet</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-left-primary shadow py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="row mb-2 flex-nowrap"><i class="fa-solid fa-gear fa-2xl pt-3 text-primary"></i>
+                                            <div class="h3 font-weight-bold text-gray-800 pl-3">Administrator</div>
+                                        </div>
+                                        <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-user-group fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-2 pt-2">Użytkownicy i osoby</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-book-atlas fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Słowniki</div>
+                                        </div>
+                                    </div>
+                                    <div class="hover rounded">
+                                        <div class="row flex-nowrap"><i class="fa-solid fa-clipboard-list fa-lg pl-3 pt-3"></i>
+                                            <div class="h6 pl-3 pt-2">Log synchronizacji</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                       
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c2c17f95a2.js" crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+</body>
+
+</html>
